@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drop down</title>
+
+    <meta name="description" content="Résumé du cOntenu de votre page">
+
+    <!-- Open Graph data -->
+    <meta property="og:site_name" content="Site Name">
+    <meta property="og:title" content="Title Here">
+    <meta property="og:description" content="Description Here">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.example.com/">
+
+    <meta property="og:image" content="http://example.com/assets/images/image.jpg">
+    <!-- lien absolu vers l'image -->
+    <!-- y en a juste pas... -->
+    <meta property="og:image:width" content="1800">
+    <meta property="og:image:height" content="945">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kulim+Park:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,75..125,200..1000,440..540;1,6..12,75..125,200..1000,440..540&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+        
+</head>
+<body >
+    <nav class="menu">
+       <!-- ul.menu__liste>li.menu__el*5>a-->
+        <ul class="menu__liste">
+            <li class="menu__el">
+                <a href="">Produits</a>
+                
+                
+            </li>
+
+            <li class="menu__el menu__el--relative">
+                <a href="">Solutions</a>
+
+                <ul class="menu__dropdown">
+                    <li class="menu__dropdownEl"><a href="#">Menu 1</a></li>
+                    <li class="menu__dropdownEl"><a href="#">Menu 2</a></li>
+                    <li class="menu__dropdownEl"><a href="#">Menu 3</a></li>
+                    <li class="menu__dropdownEl"><a href="#">Menu 4</a></li>
+                    <li class="menu__dropdownEl"><a href="#">Super menu 5</a></li>
+                </ul>
+
+            </li>
+            <li class="menu__el"><a href="">Développeurs</a></li>
+
+            <li class="menu__el menu__el--relative">
+                <a href="">Ressources</a>
+
+                <ul class="menu__dropdown">
+                    <li class="menu__dropdownEl"><a href="#">Menu 1</a></li>
+                    <li class="menu__dropdownEl"><a href="#">Menu 2</a></li>
+                    <li class="menu__dropdownEl"><a href="#">Menu 3</a></li>
+                    <li class="menu__dropdownEl"><a href="#">Menu 4</a></li>
+                    <li class="menu__dropdownEl"><a href="#">Super menu 5</a></li>
+                </ul>
+            
+            </li>
+            <li class="menu__el">
+                <a href="">Tarifs</a>
+
+                <!-- mego dropdown -->
+
+                <div class="menu__megaDropDown">
+
+                    <div>
+                        <span>Paiement</span>
+                        <ul>
+                            <li><a href="#">Paiement en ligne</a></li>
+                            <li><a href="#">Terminal</a></li>
+                            <li><a href="#">Checkout</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <span>Revenus</span>
+                        <ul>
+                            <li><a href="#">Bilings</a></li>
+                            <li><a href="#">Metronome</a></li>
+                            <li><a href="#">Checkout</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <span>Gestion</span>
+                        <ul>
+                            <li><a href="#">Paiement en ligne</a></li>
+                            <li><a href="#">Terminal</a></li>
+                            <li><a href="#">Checkout</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <span>Services</span>
+                        <ul>
+                            <li><a href="#">Paiement en ligne</a></li>
+                            <li><a href="#">Terminal</a></li>
+                            <li><a href="#">Checkout</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <span>Autres produits</span>
+                        <ul>
+                            <li><a href="#">Paiement en ligne</a></li>
+                            <li><a href="#">Terminal</a></li>
+                            <li><a href="#">Checkout</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </li>
+        </ul>
+    </nav>
+
+
+</body>
+</html>

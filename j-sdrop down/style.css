@@ -1,0 +1,105 @@
+/* 
+toujours commencé par le body et le style de la typoµ
+
+Mobile d'abord pour led :@
+*/
+
+body{
+    font-family: "Kulim Park", sans-serif;
+    font-size: 18px;
+    line-height: 1.5; 
+    color: #2A2A2A;
+    margin: 0;
+
+    background-color: antiquewhite;
+}
+
+.menu{
+    width: 80%;
+    margin: 40px auto;
+    position: relative;
+}
+
+.menu__liste{
+    list-style: none;
+    margin: 0;
+
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 10px 15px -3px rgb(252, 157, 33, 0.07);
+
+    display: flex;
+    gap: 15px;
+
+    padding: 20px;
+}
+
+.menu__el a{
+    text-decoration: none;
+    color: #2A2A2A;
+}
+
+.menu__el > a{
+    position: relative;
+    color: #2A2A2A;
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu__el--relative{
+    position: relative;
+}
+
+.menu__dropdown{
+    display: none;
+
+    list-style: none;
+    margin: 0;
+
+    position: absolute;
+    left: -19px;
+    top: 47px;
+
+    background-color: #fff;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0px 10px 15px -3px rgb(252, 157, 33, 0.07);
+    border-radius: 0 0 6px 6px;
+}
+
+.menu__el:hover .menu__dropdown{
+    display: block;
+}
+
+.menu__el:hover .menu__megaDropDown{
+    display: flex;
+}
+
+.menu__el:hover > a{
+    color: blue;
+}
+
+.menu__dropdownEl a{
+    display: block;
+    text-decoration: none;
+    color: #2A2A2A;
+}
+
+.menu__dropdownEl a:hover,
+.menu__dropdownEl a:focus{
+    color: mediumpurple;
+}
+
+.menu__megaDropDown{
+    background-color: #fff;
+    display: none;
+
+    position: absolute;
+    padding: 20px;
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0px 10px 15px -3px rgb(252, 157, 33, 0.07);
+
+    box-sizing: border-box;
+    width: 100%;
+    left: 0;
+}

@@ -1,0 +1,65 @@
+/* BURGER MENU */ 
+/*.menu{
+    display: none;
+}
+.menu--open{
+    display: block;
+}
+
+/* VERSION 2 : cusromisation */
+
+/* utiliser les positions
+    relative
+    absolute
+    fixed
+    sticky
+*/
+
+.btn--menu{
+    /* Pas de modifications du flux du document */
+    /* position avec top, right, bottom et left */
+    /* l'élément sort du flux */
+
+    /* position absolute */
+    /* l'élément sort du flux */
+    /* position avec top, right, bottom et left */
+    /* position par rapport au viewport */
+    /* OU au premier parent qui est positionné */
+
+    position: fixed;
+    /* l'élément sort du flux */
+    /* position avec top, right, bottom et left */
+    /*position par rapport au viewport */
+    /* ne réagit pas au scroll*/
+    top: 20px;
+    right: 10px;
+
+    /* pour les superpositions */
+    /* pour le z-index l'element DOIT être positionner */
+    z-index: 200; 
+
+}
+
+
+.menu{
+    background-color: red;
+    position: fixed;
+    z-index: 100;
+ 
+    width: 400px;
+    padding-top: 250px;
+    right: -100px;
+    top: -150px;
+ 
+    border-radius: 0 0 0 20px;
+    transform: rotate(-6deg);
+    transform-origin: right bottom;
+    /* easing.net easeOutBack*/
+    transition: .6s cubic-bezier(0.34, 1.56, 0.64, 1)
+}
+ 
+.menu--open{
+    transform: rotate(85deg);
+    /* easing.net easeInBack*/
+    transition-timing-function: cubic-bezier(0.36, 0, 0.66, -0.56)
+}

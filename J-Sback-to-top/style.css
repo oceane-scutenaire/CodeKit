@@ -1,0 +1,31 @@
+/* 
+toujours commencé par le body et le style de la typoµ
+
+Mobile d'abord pour led :@
+*/
+
+body{
+    font-family: "Kulim Park", sans-serif;
+    font-size: 18px;
+    line-height: 1.5; /*1,5 x 18px */
+    color: #2A2A2A;
+    font-weight: 700;
+    margin: 0;
+
+    height: 3000px; /*juste pour la démo*/
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.backToTop{
+    position: fixed;
+    bottom: 18px;
+    right: 18px;
+    display: none;
+}
+
+.backToTop--show{
+    display: inline;
+}
